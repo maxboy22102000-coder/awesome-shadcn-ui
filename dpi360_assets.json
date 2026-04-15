@@ -1,0 +1,13 @@
+{
+  "images": [
+    "https://www.dpi360.com.tw/wp-content/uploads/2022/12/DPI-logo.svg",
+    "https://www.dpi360.com.tw/wp-content/uploads/2023/04/1920x980_banner02.jpg",
+    "https://www.dpi360.com.tw/wp-content/uploads/2022/12/about2.png",
+    "https://www.dpi360.com.tw/wp-content/uploads/2022/12/DPI-logo_icon.svg"
+  ],
+  "cssFiles": [
+    "https://www.dpi360.com.tw/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css",
+    "https://www.dpi360.com.tw/wp-content/plugins/elementor-pro/assets/css/widget-posts.min.css",
+    "https://www.dpi360.com.tw/wp-content/plugins/elementor-pro/assets/css/widget-flip-box.min.css"
+  ]
+}

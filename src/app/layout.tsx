@@ -1,5 +1,4 @@
-import { Footer } from "@/components/layout/footer";
-import { Header } from "@/components/layout/header";
+// Header and Footer removed for pure clone
 import { Providers } from "@/providers/providers";
 import { type Metadata, type Viewport } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
@@ -13,52 +12,37 @@ import "@/app/globals.css";
 import { Geist, Geist_Mono } from "next/font/google";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://awesome-shadcn-ui.vercel.app"),
+  metadataBase: new URL("https://www.dpi360.com.tw"),
   title: {
-    default: "awesome-shadcn-ui",
-    template: `%s | awesome-shadcn-ui`,
+    default: "全印象數位影像 DPI360",
+    template: `%s | 全印象數位影像 DPI360`,
   },
-  description: "A curated list of awesome things related to shadcn/ui",
+  description: "專業完善一貫性服務的印刷設計公司",
   keywords: [
-    "shadcn",
-    "ui library",
-    "awesome",
-    "github",
-    "readme",
-    "shad",
-    "awesome list",
-    "awesome shad",
-    "shadcn ui",
+    "印刷",
+    "大圖輸出",
+    "品牌設計",
+    "商業設計",
+    "DPI360",
   ],
   alternates: {
-    canonical: "https://awesome-shadcn-ui.vercel.app/",
+    canonical: "https://www.dpi360.com.tw/",
   },
   openGraph: {
     type: "website",
-    locale: "en_US",
-    url: "https://awesome-shadcn-ui.vercel.app/",
-    siteName: "awesome-shadcn-ui",
-    title: "awesome-shadcn-ui",
-    description: "A curated list of awesome things related to shadcn/ui",
-    images: [
-      {
-        url: "/seo.png",
-        width: 1200,
-        height: 630,
-        alt: "awesome-shadcn-ui",
-      },
-    ],
+    locale: "zh_TW",
+    url: "https://www.dpi360.com.tw/",
+    siteName: "全印象數位影像 DPI360",
+    title: "全印象數位影像 DPI360",
+    description: "專業完善一貫性服務的印刷設計公司",
   },
   twitter: {
-    creator: "@birobirobiro",
-    site: "@birobirobiro",
     card: "summary_large_image",
-    title: "awesome-shadcn-ui",
-    description: "A curated list of awesome things related to shadcn/ui",
-    images: ["/seo.png"],
+    title: "全印象數位影像 DPI360",
+    description: "專業完善一貫性服務的印刷設計公司",
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/dpi360/250401_[宏宇]LOGO-27.png",
   },
 };
 
@@ -101,10 +85,8 @@ export default function RootLayout({
           />
         )}
         <Providers>
-          <div className="relative flex min-h-screen flex-col">
-            <Header />
+          <div className="relative flex min-h-screen flex-col selection:bg-neutral-900 selection:text-white">
             <main className="flex-1">{children}</main>
-            <Footer />
           </div>
         </Providers>
       </body>
