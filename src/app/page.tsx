@@ -2,6 +2,8 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Player } from '@remotion/player';
+import { HandwritingTitle } from '@/components/HandwritingTitle';
 
 export default function HongyuArtHome() {
     const logoPath = '/dpi360/250401_[宏宇]LOGO-27.png';
@@ -53,13 +55,13 @@ export default function HongyuArtHome() {
             {/* Navigation */}
             <nav className="fixed top-0 w-full z-50 bg-[#0a0a0c]/80 backdrop-blur-md border-b border-white/5">
                 <div className="container mx-auto px-6 h-20 flex items-center justify-between">
-                    <div className="flex items-center gap-3 group cursor-pointer">
-                        <div className="relative w-12 h-12 rounded-lg bg-white p-1 overflow-hidden shadow-2xl transition-transform group-hover:scale-105">
-                            <Image src={logoPath} alt="宏宇工藝 Logo" fill className="object-contain p-1" />
+                    <div className="flex items-center gap-4 group cursor-pointer">
+                        <div className="relative w-16 h-16 rounded-xl bg-white p-1 overflow-hidden shadow-2xl transition-transform group-hover:scale-105 border border-white/20">
+                            <Image src={logoPath} alt="宏宇工藝 Logo" fill className="object-contain p-1.5" />
                         </div>
-                        <div>
-                            <span className="text-xl font-bold tracking-tight text-white block leading-none">宏宇工藝</span>
-                            <span className="text-[10px] text-neutral-500 uppercase tracking-widest font-medium">Hongyu Art & Production Co., Ltd</span>
+                        <div className="flex flex-col justify-center gap-1">
+                            <span className="text-3xl font-black tracking-tight text-white block leading-none drop-shadow-md">宏宇工藝</span>
+                            <span className="text-[11px] text-neutral-400 uppercase tracking-[0.25em] font-medium leading-none">Hongyu Art & Production</span>
                         </div>
                     </div>
                     <div className="hidden md:flex gap-10 text-xs font-bold tracking-[0.2em]">
@@ -91,12 +93,26 @@ export default function HongyuArtHome() {
                             </span>
                             專業快速的產品服務
                         </div>
-                        <h1 className="text-6xl md:text-[100px] font-black text-white mb-10 leading-[0.9] tracking-tighter">
-                            追求極致的<br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white/70 to-neutral-500 italic">工藝轉化</span>
+                        <h1 className="text-3xl md:text-5xl font-black text-white mb-4 leading-tight tracking-tighter opacity-90 drop-shadow-lg">
+                            追求極致的 <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-amber-200 italic">工藝轉化</span>
                         </h1>
-                        <p className="text-xl text-neutral-400 mb-12 max-w-3xl leading-relaxed font-light">
-                            宏宇工藝將品牌價值轉化為具有說服力的實體觸感，每一個成品都是為了驅動行動。
+                        <div className="w-[100%] md:w-[120%] h-[120px] md:h-[200px] mb-8 relative pointer-events-none -ml-4 md:-ml-8 animate-in fade-in zoom-in duration-1000 delay-300">
+                            <Player
+                                component={HandwritingTitle}
+                                durationInFrames={150}
+                                compositionWidth={2000}
+                                compositionHeight={220}
+                                fps={30}
+                                style={{
+                                    width: '100%',
+                                    height: '100%',
+                                }}
+                                autoPlay
+                                loop
+                            />
+                        </div>
+                        <p className="text-xl text-neutral-300 mb-12 max-w-3xl leading-relaxed font-light tracking-wide border-l-4 border-amber-500/50 pl-6 animate-in slide-in-from-left duration-1000">
+                            將品牌價值轉化為具有說服力的實體觸感，每一個成品都是為了驅動行動。
                         </p>
                         <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                             <Link href="/inquiry" className="px-12 py-6 bg-white text-black font-black text-xs tracking-widest rounded-2xl hover:bg-neutral-200 transition-all shadow-xl shadow-white/5">
@@ -129,7 +145,7 @@ export default function HongyuArtHome() {
                 <div className="container mx-auto px-6">
                     <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
                         <div className="max-w-3xl">
-                            <h2 className="text-5xl font-black text-white mb-6 tracking-tight">實戰案例展示</h2>
+                            <h2 className="text-5xl font-black text-white mb-6 tracking-tight">產品實績</h2>
                             <p className="text-lg text-neutral-400 font-light leading-relaxed">
                                 從故宮的文創精品到星級聯名包裝，宏宇工藝以精湛的技術在不同領域建立信任。
                             </p>

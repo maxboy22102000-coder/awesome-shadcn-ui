@@ -29,7 +29,7 @@ const standardAnimations = {
   initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
   exit: { opacity: 0, y: -20 },
-  transition: { duration: 0.2, ease: "easeOut" },
+  transition: { duration: 0.2, ease: "easeOut" as const },
 };
 
 const ItemCard: React.FC<ItemCardProps> = ({

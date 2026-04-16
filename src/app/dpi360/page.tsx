@@ -1,5 +1,5 @@
 'use client';
-import React, from 'react';
+import React from 'react';
 import Image from 'next/image';
 
 export default function DPI360Clone() {
@@ -36,9 +36,8 @@ export default function DPI360Clone() {
             <header className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm py-4">
                 <div className="container mx-auto px-6 max-w-7xl flex items-center justify-between">
                     <div className="flex items-center">
-                        {/* Using a placeholder since we don't have the svg ready locally without full fetch, but let's use text to represent logo */}
-                        <span className="text-2xl font-black text-blue-600 tracking-tight">DPI<span className="text-gray-800">360</span></span>
-                        <span className="ml-3 text-xs text-gray-500 hidden md:block">全印象數位影像<br />專業印刷設計</span>
+                        <span className="text-2xl font-black text-amber-500 tracking-tight">宏宇<span className="text-gray-800">工藝</span></span>
+                        <span className="ml-3 text-xs text-gray-500 hidden md:block">宏宇工藝<br />專業印刷設計</span>
                     </div>
                     <nav className="hidden md:flex space-x-8 text-sm font-bold text-gray-600">
                         <a href="#" className="text-blue-600 hover:text-blue-800 transition">HOME</a>
@@ -149,15 +148,15 @@ export default function DPI360Clone() {
             {/* Footer */}
             <footer className="bg-gray-900 text-gray-400 py-12">
                 <div className="container mx-auto px-6 max-w-7xl text-center">
-                    <h2 className="text-2xl font-black text-white mb-6">DPI<span className="text-blue-500">360</span></h2>
-                    <p className="mb-6">全印象數位影像｜品牌設計、商業設計、大圖輸出、展覽活動</p>
+                    <h2 className="text-2xl font-black text-white mb-6">宏宇<span className="text-amber-500">工藝</span></h2>
+                    <p className="mb-6">宏宇工藝｜品牌設計、商業設計、大圖輸出、展覽活動</p>
                     <div className="flex justify-center space-x-4">
                         <a href="#" className="hover:text-white transition">Facebook</a>
                         <a href="#" className="hover:text-white transition">Instagram</a>
                         <a href="#" className="hover:text-white transition">Line@</a>
                     </div>
                     <div className="mt-12 text-sm border-t border-gray-800 pt-8">
-                        © {new Date().getFullYear()} 全印象數位影像. All Rights Reserved.
+                        © {new Date().getFullYear()} 宏宇工藝. All Rights Reserved.
                     </div>
                 </div>
             </footer>

@@ -16,7 +16,7 @@ const standardAnimations = {
   initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
   exit: { opacity: 0, y: -20 },
-  transition: { duration: 0.2, ease: "easeOut" },
+  transition: { duration: 0.2, ease: "easeOut" as const },
 };
 
 interface SponsorCardProps {
@@ -29,7 +29,7 @@ const SponsorCard: React.FC<SponsorCardProps> = ({ sponsor }) => {
   };
 
   return (
-    <motion.div layout {...standardAnimations} className="h-full">
+    <motion.div layout {...(standardAnimations as any)} className="h-full">
       <Card
         className="h-full group hover:border-primary/40 hover:shadow-lg transition-all duration-200 overflow-hidden cursor-pointer flex flex-col gap-0 py-0"
         onClick={handleCardClick}

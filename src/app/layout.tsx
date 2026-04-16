@@ -14,8 +14,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.dpi360.com.tw"),
   title: {
-    default: "全印象數位影像 DPI360",
-    template: `%s | 全印象數位影像 DPI360`,
+    default: "宏宇工藝",
+    template: `%s | 宏宇工藝`,
   },
   description: "專業完善一貫性服務的印刷設計公司",
   keywords: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "大圖輸出",
     "品牌設計",
     "商業設計",
-    "DPI360",
+    "宏宇工藝",
   ],
   alternates: {
     canonical: "https://www.dpi360.com.tw/",
@@ -32,13 +32,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "zh_TW",
     url: "https://www.dpi360.com.tw/",
-    siteName: "全印象數位影像 DPI360",
-    title: "全印象數位影像 DPI360",
+    siteName: "宏宇工藝",
+    title: "宏宇工藝",
     description: "專業完善一貫性服務的印刷設計公司",
   },
   twitter: {
     card: "summary_large_image",
-    title: "全印象數位影像 DPI360",
+    title: "宏宇工藝",
     description: "專業完善一貫性服務的印刷設計公司",
   },
   icons: {
