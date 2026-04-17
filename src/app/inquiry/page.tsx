@@ -6,9 +6,37 @@ export default function InquiryPage() {
     const logoPath = '/dpi360/250401_[宏宇]LOGO-27.png';
     const [submitted, setSubmitted] = useState(false);
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        setSubmitted(true);
+
+        // ----------------------------------------------------------------------
+        // 【實際發信設定】因為網站使用 output: 'export' 純靜態輸出，沒有 Node.js 後端，
+        // 最簡單的發信方式是到 https://formspree.io/ 免費註冊，建立一個表單後
+        // 將給您的 Endpoint URL 貼在下方取代空字串。
+        // 例如: const FORMSPREE_URL = "https://formspree.io/f/xbjnq..."
+        // ----------------------------------------------------------------------
+        const FORMSPREE_URL = "https://formspree.io/f/xzdyeqgj";
+
+        if (FORMSPREE_URL) {
+            const formData = new FormData(e.currentTarget);
+            try {
+                const response = await fetch(FORMSPREE_URL, {
+                    method: 'POST',
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                });
+                if (response.ok) {
+                    setSubmitted(true);
+                } else {
+                    alert("發送失敗，請稍後再試或透過電話聯繫我們。");
+                }
+            } catch (error) {
+                alert("發送錯誤，請檢查網路連線。");
+            }
+        } else {
+            // 如果還沒設定 URL，先呈現假性成功以供預覽
+            setSubmitted(true);
+        }
     };
 
     if (submitted) {
@@ -36,23 +64,23 @@ export default function InquiryPage() {
             </nav>
 
             <div className="container mx-auto px-6 pt-40 max-w-3xl">
-                <h1 className="text-5xl font-black text-white mb-6">啟動您的專案</h1>
+                <h1 className="text-5xl font-black text-white mb-6">需求詢問</h1>
                 <p className="text-neutral-500 mb-12">請填寫您的基本需求，我們將為您提供專業的工藝與報價建議。</p>
 
                 <form onSubmit={handleSubmit} className="space-y-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div className="space-y-2">
                             <label className="text-[10px] font-bold text-neutral-500 uppercase tracking-widest">姓名 / 公司名稱</label>
-                            <input required type="text" className="w-full bg-neutral-900 border border-white/10 rounded-2xl p-4 focus:border-amber-500 outline-none transition-all" />
+                            <input name="name" required type="text" className="w-full bg-neutral-900 border border-white/10 rounded-2xl p-4 focus:border-amber-500 outline-none transition-all" />
                         </div>
                         <div className="space-y-2">
                             <label className="text-[10px] font-bold text-neutral-500 uppercase tracking-widest">聯絡電話</label>
-                            <input required type="tel" className="w-full bg-neutral-900 border border-white/10 rounded-2xl p-4 focus:border-amber-500 outline-none transition-all" />
+                            <input name="phone" required type="tel" className="w-full bg-neutral-900 border border-white/10 rounded-2xl p-4 focus:border-amber-500 outline-none transition-all" />
                         </div>
                     </div>
                     <div className="space-y-2">
                         <label className="text-[10px] font-bold text-neutral-500 uppercase tracking-widest">需求項目</label>
-                        <select className="w-full bg-neutral-900 border border-white/10 rounded-2xl p-4 focus:border-amber-500 outline-none transition-all appearance-none cursor-pointer">
+                        <select name="requirement" className="w-full bg-neutral-900 border border-white/10 rounded-2xl p-4 focus:border-amber-500 outline-none transition-all appearance-none cursor-pointer">
                             <option>商業包裝設計</option>
                             <option>大型展場輸出</option>
                             <option>文創精品開發</option>
@@ -62,7 +90,7 @@ export default function InquiryPage() {
                     </div>
                     <div className="space-y-2">
                         <label className="text-[10px] font-bold text-neutral-500 uppercase tracking-widest">詳細描述</label>
-                        <textarea required rows={5} className="w-full bg-neutral-900 border border-white/10 rounded-2xl p-4 focus:border-amber-500 outline-none transition-all resize-none"></textarea>
+                        <textarea name="details" required rows={5} className="w-full bg-neutral-900 border border-white/10 rounded-2xl p-4 focus:border-amber-500 outline-none transition-all resize-none"></textarea>
                     </div>
                     <button type="submit" className="w-full py-6 bg-amber-600 hover:bg-amber-500 text-white font-black text-xs tracking-[0.3em] rounded-2xl transition-all shadow-2xl shadow-amber-900/40">
                         送出需求確認

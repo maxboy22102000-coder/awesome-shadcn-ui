@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@base-ui/react": "^1.2.0",
+    "@formspree/react": "^3.0.0",
     "@hugeicons/core-free-icons": "^3.3.0",
     "@hugeicons/react": "^1.1.5",
     "@next/third-parties": "^16.1.6",
@@ -49,6 +50,7 @@
     "motion": "^12.23.24",
     "next": "16.0.10",
     "next-themes": "^0.4.6",
+    "nodemailer": "^8.0.5",
     "radix-ui": "latest",
     "react": "^19.2.3",
     "react-day-picker": "^9.14.0",

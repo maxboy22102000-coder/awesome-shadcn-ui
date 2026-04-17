@@ -41,9 +41,6 @@ export const metadata: Metadata = {
     title: "宏宇工藝",
     description: "專業完善一貫性服務的印刷設計公司",
   },
-  icons: {
-    icon: "/dpi360/250401_[宏宇]LOGO-27.png",
-  },
 };
 
 export const viewport: Viewport = {

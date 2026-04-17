@@ -64,14 +64,14 @@ export default function HongyuArtHome() {
                             <span className="text-[11px] text-neutral-400 uppercase tracking-[0.25em] font-medium leading-none">Hongyu Art & Production</span>
                         </div>
                     </div>
-                    <div className="hidden md:flex gap-10 text-xs font-bold tracking-[0.2em]">
+                    <div className="hidden md:flex gap-10 text-sm font-bold tracking-[0.2em] items-center">
                         {navItems.map((item) => (
                             <a key={item.id} href={`#${item.id}`} className="text-neutral-500 hover:text-white transition-colors duration-300">
                                 {item.label}
                             </a>
                         ))}
                     </div>
-                    <Link href="/inquiry" className="bg-white text-black text-[10px] font-black tracking-widest px-8 py-3 rounded-full hover:bg-neutral-200 transition-all active:scale-95 shadow-lg shadow-white/5">
+                    <Link href="/inquiry" className="bg-white text-black text-sm font-black tracking-widest px-8 py-3 rounded-full hover:bg-neutral-200 transition-all active:scale-95 shadow-lg shadow-white/5">
                         需求詢問
                     </Link>
                 </div>
@@ -115,10 +115,10 @@ export default function HongyuArtHome() {
                             將品牌價值轉化為具有說服力的實體觸感，每一個成品都是為了驅動行動。
                         </p>
                         <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-                            <Link href="/inquiry" className="px-12 py-6 bg-white text-black font-black text-xs tracking-widest rounded-2xl hover:bg-neutral-200 transition-all shadow-xl shadow-white/5">
-                                啟動您的專案
+                            <Link href="/inquiry" className="px-12 py-6 bg-white text-black font-black text-sm tracking-widest rounded-2xl hover:bg-neutral-200 transition-all shadow-xl shadow-white/5">
+                                需求詢問
                             </Link>
-                            <a href="#portfolio" className="px-12 py-6 border border-white/10 hover:bg-white/5 text-white font-black text-xs tracking-widest rounded-2xl transition-all backdrop-blur-sm">
+                            <a href="#portfolio" className="px-12 py-6 border border-white/10 hover:bg-white/5 text-white font-black text-sm tracking-widest rounded-2xl transition-all backdrop-blur-sm">
                                 精選作品集
                             </a>
                         </div>
@@ -209,8 +209,8 @@ export default function HongyuArtHome() {
                     </div>
 
                     <div className="mt-24 text-center">
-                        <Link href="/inquiry" className="px-16 py-8 bg-amber-600 hover:bg-amber-500 text-white font-black text-sm tracking-[0.3em] rounded-3xl transition-all shadow-2xl shadow-amber-900/40 active:scale-95 leading-none inline-block">
-                            啟動您的專案
+                        <Link href="/inquiry" className="px-16 py-8 bg-amber-600 hover:bg-amber-500 text-white font-black text-base tracking-[0.3em] rounded-3xl transition-all shadow-2xl shadow-amber-900/40 active:scale-95 leading-none inline-block">
+                            需求詢問
                         </Link>
                     </div>
                 </div>
@@ -232,26 +232,26 @@ export default function HongyuArtHome() {
                             </p>
                         </div>
                         <div>
-                            <h4 className="text-[10px] font-black text-white mb-8 tracking-[0.3em] uppercase">頁面導覽</h4>
-                            <ul className="space-y-4 text-xs text-neutral-600 font-bold tracking-widest">
+                            <h4 className="text-sm font-black text-white mb-8 tracking-[0.3em] uppercase">頁面導覽</h4>
+                            <ul className="space-y-4 text-base text-neutral-600 font-bold tracking-widest">
                                 {navItems.map(item => (
                                     <li key={item.id}><a href={`#${item.id}`} className="hover:text-white transition">{item.label}</a></li>
                                 ))}
                             </ul>
                         </div>
                         <div>
-                            <h4 className="text-[10px] font-black text-white mb-8 tracking-[0.3em] uppercase">聯繫資訊</h4>
-                            <ul className="space-y-5 text-xs text-neutral-500 font-medium tracking-wide">
+                            <h4 className="text-sm font-black text-white mb-8 tracking-[0.3em] uppercase">聯繫資訊</h4>
+                            <ul className="space-y-5 text-base text-neutral-500 font-medium tracking-wide">
                                 <li className="flex items-start gap-3">
-                                    <span className="text-neutral-700">地址.</span>
+                                    <span className="text-neutral-700 shrink-0 whitespace-nowrap">地址</span>
                                     <span>新北市中和區中山路二段332巷17號1樓</span>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <span className="text-neutral-700">電話.</span>
+                                    <span className="text-neutral-700">電話</span>
                                     <span className="text-white">02-8245-8008</span>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <span className="text-neutral-700">郵件.</span>
+                                    <span className="text-neutral-700">郵件</span>
                                     <span className="text-amber-500 hover:text-amber-400">chiayu@hy-ap.com</span>
                                 </li>
                             </ul>
