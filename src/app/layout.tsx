@@ -14,14 +14,13 @@ import { Geist, Geist_Mono } from "next/font/google";
 export const metadata: Metadata = {
   metadataBase: new URL("https://hy-ap.com"),
   title: {
-    default: "宏宇工藝有限公司",
+    default: "宏宇工藝有限公司 ",
     template: `%s | 宏宇工藝有限公司`,
   },
-  description: "專業完善一貫性服務的印刷設計公司",
+  description: "宏宇工藝提供高品質的數位印刷、大圖輸出與商業客製化設計服務",
   keywords: [
-    "印刷",
+    "數位印刷",
     "大圖輸出",
-    "品牌設計",
     "商業設計",
     "宏宇工藝有限公司",
   ],
@@ -34,12 +33,12 @@ export const metadata: Metadata = {
     url: "https://hy-ap.com/",
     siteName: "宏宇工藝有限公司",
     title: "宏宇工藝有限公司",
-    description: "專業完善一貫性服務的印刷設計公司",
+    description: "宏宇工藝提供高品質的數位印刷、大圖輸出與商業客製化設計服務",
   },
   twitter: {
     card: "summary_large_image",
     title: "宏宇工藝有限公司",
-    description: "專業完善一貫性服務的印刷設計公司",
+    description: "宏宇工藝提供高品質的數位印刷、大圖輸出與商業客製化設計服務",
   },
 };
 
