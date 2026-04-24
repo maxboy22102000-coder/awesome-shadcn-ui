@@ -12,10 +12,10 @@ import "@/app/globals.css";
 import { Geist, Geist_Mono } from "next/font/google";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.dpi360.com.tw"),
+  metadataBase: new URL("https://hy-ap.com"),
   title: {
-    default: "宏宇工藝",
-    template: `%s | 宏宇工藝`,
+    default: "宏宇工藝有限公司",
+    template: `%s | 宏宇工藝有限公司`,
   },
   description: "專業完善一貫性服務的印刷設計公司",
   keywords: [
@@ -23,22 +23,22 @@ export const metadata: Metadata = {
     "大圖輸出",
     "品牌設計",
     "商業設計",
-    "宏宇工藝",
+    "宏宇工藝有限公司",
   ],
   alternates: {
-    canonical: "https://www.dpi360.com.tw/",
+    canonical: "https://hy-ap.com/",
   },
   openGraph: {
     type: "website",
     locale: "zh_TW",
-    url: "https://www.dpi360.com.tw/",
-    siteName: "宏宇工藝",
-    title: "宏宇工藝",
+    url: "https://hy-ap.com/",
+    siteName: "宏宇工藝有限公司",
+    title: "宏宇工藝有限公司",
     description: "專業完善一貫性服務的印刷設計公司",
   },
   twitter: {
     card: "summary_large_image",
-    title: "宏宇工藝",
+    title: "宏宇工藝有限公司",
     description: "專業完善一貫性服務的印刷設計公司",
   },
 };

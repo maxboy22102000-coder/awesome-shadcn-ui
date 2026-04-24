@@ -45,7 +45,7 @@ export default function HongyuArtHome() {
     const navItems = [
         { label: '價值', id: 'value' },
         { label: '夥伴', id: 'trust' },
-        { label: '作品', id: 'portfolio' },
+        // { label: '作品', id: 'portfolio' },
         { label: '服務', id: 'services' },
         { label: '聯絡', id: 'contact' },
     ];
@@ -57,10 +57,10 @@ export default function HongyuArtHome() {
                 <div className="container mx-auto px-6 h-20 flex items-center justify-between">
                     <div className="flex items-center gap-4 group cursor-pointer">
                         <div className="relative w-16 h-16 rounded-xl bg-white p-1 overflow-hidden shadow-2xl transition-transform group-hover:scale-105 border border-white/20">
-                            <Image src={logoPath} alt="宏宇工藝 Logo" fill className="object-contain p-1.5" />
+                            <Image src={logoPath} alt="宏宇工藝有限公司 Logo" fill className="object-contain p-1.5" />
                         </div>
                         <div className="flex flex-col justify-center gap-1">
-                            <span className="text-3xl font-black tracking-tight text-white block leading-none drop-shadow-md">宏宇工藝</span>
+                            <span className="text-3xl font-black tracking-tight text-white block leading-none drop-shadow-md">宏宇工藝有限公司</span>
                             <span className="text-[11px] text-neutral-400 uppercase tracking-[0.25em] font-medium leading-none">Hongyu Art & Production</span>
                         </div>
                     </div>
@@ -118,9 +118,9 @@ export default function HongyuArtHome() {
                             <Link href="/inquiry" className="px-12 py-6 bg-white text-black font-black text-sm tracking-widest rounded-2xl hover:bg-neutral-200 transition-all shadow-xl shadow-white/5">
                                 需求詢問
                             </Link>
-                            <a href="#portfolio" className="px-12 py-6 border border-white/10 hover:bg-white/5 text-white font-black text-sm tracking-widest rounded-2xl transition-all backdrop-blur-sm">
+                            {/* <a href="#portfolio" className="px-12 py-6 border border-white/10 hover:bg-white/5 text-white font-black text-sm tracking-widest rounded-2xl transition-all backdrop-blur-sm">
                                 精選作品集
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>
@@ -129,7 +129,7 @@ export default function HongyuArtHome() {
             {/* Trust Bar: TRUST */}
             <section id="trust" className="py-24 border-y border-white/5 bg-neutral-950/30">
                 <div className="container mx-auto px-6">
-                    <p className="text-center text-[10px] font-bold tracking-[0.5em] text-neutral-600 mb-16 uppercase">宏宇工藝 合作夥伴</p>
+                    <p className="text-center text-[10px] font-bold tracking-[0.5em] text-neutral-600 mb-16 uppercase">宏宇工藝有限公司 合作夥伴</p>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-24 opacity-70 hover:opacity-100 transition-opacity duration-700">
                         {partnerLogos.map((logo) => (
                             <div key={logo.name} className="relative aspect-[3/1] grayscale hover:grayscale-0 transition-all duration-500">
@@ -141,6 +141,7 @@ export default function HongyuArtHome() {
             </section>
 
             {/* Portfolio Section: PORTFOLIO */}
+            {/* 
             <section id="portfolio" className="py-32 relative">
                 <div className="container mx-auto px-6">
                     <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
@@ -180,6 +181,7 @@ export default function HongyuArtHome() {
                     </div>
                 </div>
             </section>
+            */}
 
             {/* Services Section: SERVICES */}
             <section id="services" className="py-32 bg-neutral-950/50 border-t border-white/5">
@@ -225,7 +227,7 @@ export default function HongyuArtHome() {
                                 <div className="relative w-10 h-10 rounded bg-white p-1">
                                     <Image src={logoPath} alt="Logo" fill className="object-contain p-1" />
                                 </div>
-                                <span className="text-2xl font-black text-white uppercase tracking-tighter">宏宇工藝</span>
+                                <span className="text-2xl font-black text-white uppercase tracking-tighter">宏宇工藝有限公司</span>
                             </div>
                             <p className="text-neutral-500 leading-relaxed max-w-sm font-light">
                                 宏宇工藝有限公司專注於提供高品質的數位印刷、大圖輸出與商業設計服務。
@@ -252,7 +254,7 @@ export default function HongyuArtHome() {
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <span className="text-neutral-700">郵件</span>
-                                    <span className="text-amber-500 hover:text-amber-400">chiayu@hy-ap.com</span>
+                                    <span className="text-amber-500 hover:text-amber-400">HYAP@hy-ap.com</span>
                                 </li>
                             </ul>
                         </div>

@@ -44,7 +44,7 @@ export default function InquiryPage() {
             <div className="min-h-screen bg-[#0a0a0c] text-white flex flex-col items-center justify-center p-6 text-center">
                 <div className="w-20 h-20 bg-amber-500 rounded-full flex items-center justify-center text-4xl mb-8 animate-bounce">✓</div>
                 <h1 className="text-4xl font-black mb-4">需求已收到</h1>
-                <p className="text-neutral-500 mb-12">宏宇工藝將在 24 小時內與您聯繫。</p>
+                <p className="text-neutral-500 mb-12">宏宇工藝有限公司將在 24 小時內與您聯繫。</p>
                 <a href="/" className="px-12 py-4 bg-white text-black font-black text-xs tracking-widest rounded-2xl hover:bg-neutral-200 transition-all">
                     返回首頁
                 </a>
@@ -59,7 +59,7 @@ export default function InquiryPage() {
                     <div className="relative w-10 h-10 rounded bg-white p-1">
                         <Image src={logoPath} alt="Logo" fill className="object-contain p-1" />
                     </div>
-                    <span className="text-lg font-bold text-white">宏宇工藝</span>
+                    <span className="text-lg font-bold text-white">宏宇工藝有限公司</span>
                 </a>
             </nav>
 
